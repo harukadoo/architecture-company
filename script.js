@@ -6,45 +6,44 @@
 
 
 
-// const carousel = document.querySelector(".carousel"),
-// firstImg = document.querySelectorAll(".carousel__images")[0];
-// arrowIcons = document.querySelectorAll(".caruosel-btn");
 
-// let isDragStart = false, prevPageX, prevScrollLeft;
-// let firstImgWidth = firstImg.clientWidth + 30;
 
-// arrowIcons.forEach(icon => {
-//     icon.addEventListener("click", () => {
-//         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+
+
+// function onEntry(entry) {
+//     entry.forEach(change => {
+//         if (change.isIntersecting) {
+//             setTimeout(() => {
+//                 change.target.classList.add('active');
+//             }, 100); // задержка в 1 секунду (1000 миллисекунд)
+//         }
 //     });
-// });
-
-// const dragStart = (e) => {
-//     isDragStart = true;
-//     prevPageX = e.pageX;
-//     prevScrollLeft = carousel.scrollLeft;
 // }
 
-// const dragging = (e) => {
-//     if(!isDragStart) return;
-//     e.preventDefault();
+// let options = {
+//     threshold: [0.5]
+// };
+// let observer = new IntersectionObserver(onEntry, options);
+// let elements = document.querySelectorAll('.animation-block');
 
-//     let positionDiff = e.pageX - prevPageX;
-//     carousel.scrollLeft = prevScrollLeft - positionDiff;
+// for (let elm of elements) {
+//     observer.observe(elm);
 // }
 
-// const dragStop = () => {
-//     isDragStart = false;
-// }
 
-// carousel.addEventListener("mousemove", dragging);
-// carousel.addEventListener("mousedown", dragStart);
-// carousel.addEventListener("mouseup", dragStop);
-
-
-const carousel = document.querySelector('.carousel');
-const dragging = (e) => {
-    carousel.scrollLeft = e.pageX;
-}
-
-carousel.addEventListener('mousemove', dragging);
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+       change.target.classList.add('active');
+      }
+    });
+  }
+  
+  let options = {
+    threshold: [0.5] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.animation-block');
+  
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
