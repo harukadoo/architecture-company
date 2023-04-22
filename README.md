@@ -1,2 +1,2 @@
 # Architecture company website
-## Vincennzo is non-commercial project, was created to practice landing page on html & css
+#### Vincennzo is NON-COMMERCIAL project, was created to practice landing page on html & css
