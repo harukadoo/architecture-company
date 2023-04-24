@@ -362,7 +362,7 @@ body {
     padding: 6px 25px;
     color: #f6f2f0;
     text-transform: uppercase;
-    font-size: calc(var(--index) * .8);
+    font-size: calc(var(--index) * 1);
     opacity: .9;
     text-decoration: none;
     transition: .2s ease-out;
@@ -373,7 +373,7 @@ body {
 }
 
 .btn__more-projects:hover {
-    background-color: #ffffff11;
+    background-color: #ffffff1c;
     transition: .2s ease-out;
     -webkit-transition: .2s ease-out;
     -moz-transition: .2s ease-out;
