@@ -935,7 +935,7 @@ body {
 
     .button-learn-more {
         padding: 5px 18px;
-        font-size: calc(var(--index) * .9);
+        font-size: calc(var(--index) * 1.2);
     }
 
     .btn__all-projects {
@@ -945,12 +945,16 @@ body {
 
     .btn__more-projects {
         padding: 5px 18px;
-        font-size: calc(var(--index) * .9);
+        font-size: calc(var(--index) * 1.2);
     }
 
     .magazine-section__btn {
         padding: 5px 18px;
         font-size: calc(var(--index) * .9);
+    }
+
+    .about-text__caption {
+        font-size: calc(var(--index) * 1.2);
     }
 
     .hero__title {
@@ -961,18 +965,70 @@ body {
         margin-top: -10px;
     }
 
+    .gallery__main-project {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+
+    .gallery__main-project>* {
+        flex: none;
+    }
+
     .main-project__image {
-        height: calc(var(--index) * 22);
+        height: calc(var(--index) * 16);
+    }
+
+    .main-project__title {
+        font-size: calc(var(--index) * 2.6);
+    }
+
+    .main-project__caption {
+        font-size: calc(var(--index) * 1.1);
+        width: 80%;
+    }
+
+    .main-project__link a {
+        font-size: calc(var(--index) * 1.2);
+    }
+
+    .main-project__content {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .head__caption {
+        font-size: calc(var(--index) * 1.2);
     }
 
     .book-section__booklet {
-        height: 70vh;
+        height: 80vh;
         border-radius: 16px;
+        flex-direction: column;
     }
 
     .booklet__image {
-        height: 70vh;
-        border-radius: 16px;
+        height: 35vh;
+        width: 100%;
+        margin-right: 0;
+        border-radius: 10px;
+    }
+
+    .booklet__text {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 5vh;
+        padding: 6vh 5vw;
+    }
+
+    .booklet__description {
+        font-size: calc(var(--index) * 1.1);
+        text-transform: uppercase;
+        opacity: .7;
+        line-height: 1.4;
+        margin-left: 8vw;
     }
 
     .head__text {
@@ -1072,6 +1128,7 @@ body {
         justify-content: space-between;
         height: 70vh;
         margin-top: 20px;
+        
     }
 
     .hero-main__content-text {
@@ -1094,6 +1151,7 @@ body {
         cursor: pointer;
         overflow: hidden;
         position: relative;
+        margin-bottom: 7vh;
 
     }
 
@@ -1122,6 +1180,41 @@ body {
         gap: 3vw;
         display: none;
     }
+
+    .portfolio-section__container {
+        padding: 0vh 0 14vh;
+    }
+
+    .about__section {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .about-section__logo{
+        display: flex;
+        justify-content: end;
+        margin-right: 13vw;
+        opacity: .8;
+    }
+
+    .about-text__description {
+        font-size: calc(var(--index) * 1.1);
+        text-transform: uppercase;
+        opacity: .7;
+        width: 65%;
+        line-height: 1.4;
+    }
+
+    .about-section__main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 3vh;
+    }
+
+
+ 
 }
 
 @media (max-width: 450px) {
