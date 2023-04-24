@@ -955,7 +955,7 @@ body {
     }
 
     .about-text__caption {
-        font-size: calc(var(--index) * 1.2);
+        font-size: calc(var(--index) * 1.5);
     }
 
     .hero__title {
@@ -1000,7 +1000,7 @@ body {
     }
 
     .head__caption {
-        font-size: calc(var(--index) * 1.2);
+        font-size: calc(var(--index) * 1.5);
     }
 
     .book-section__booklet {
@@ -1036,7 +1036,7 @@ body {
         text-align: end;
         font-size: calc(var(--index) * 1.5);
         text-transform: uppercase;
-        margin-top: -14px;
+        margin-top: 16px;
     }
 
     .servises-section__sections {
